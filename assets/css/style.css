@@ -139,6 +139,10 @@ body {
   background: var(--white);
   transition: 0.5s;
 }
+
+.main {
+  position: absolute;
+}
 .main.active {
   width: calc(100% - 80px);
   left: 80px;
