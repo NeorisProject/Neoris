@@ -101,6 +101,7 @@ body {
   white-space: nowrap;
 }
 
+
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
@@ -272,7 +273,7 @@ body {
   color: var(--white);
 }
 
-/* ================== Order Details List ============== */
+/* ================== Messages List ============== */
 .details {
   position: relative;
   width: 100%;
@@ -480,4 +481,18 @@ body {
     right: 0;
     left: initial;
   }
+}
+
+/* ====================== Juego ========================== */
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.unity-container {
+  width: 70%;
+  height: 50%;
 }
