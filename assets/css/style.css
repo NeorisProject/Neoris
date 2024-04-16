@@ -553,6 +553,85 @@ body {
   text-align: center;
 }
 
+/* ====================== Cursos ========================== */
+.cursos-container {
+  width: 95%;
+  height: 100%;
+  background-image: url('../imgs/cursos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-header {
+  margin-left: 2.5%;
+  font-size: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  min-width: calc(100% / 3);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  background: #fff;
+  text-decoration: none;
+  color: #444;
+  flex-shrink: 0;
+}
+
+.carousel-item img {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-description {
+  padding: 8px 16px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#prevBtn2 {
+  left: 10px;
+}
+
+#nextBtn2 {
+  right: 10px;
+}
+
 /* ====================== Juego ========================== */
 
 .game-container {
