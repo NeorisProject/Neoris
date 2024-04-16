@@ -493,14 +493,6 @@ body {
 
 /* ====================== Mi Cuenta ========================== */
 
-.profile-section {
-  /* Estilos para la sección del perfil */
-}
-
-.profile-header h2 {
-  /* Estilos para el encabezado de la sección del perfil */
-}
-
 .profile-picture {
   /* Estilos para la imagen de perfil */
   display: block; /* o flex, grid, etc. */
