@@ -1,4 +1,4 @@
-// add hovered class to selected list item
+// interactividad napbar - expansión
 let list = document.querySelectorAll(".navigation li");
 
 function activeLink() {
