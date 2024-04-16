@@ -574,3 +574,147 @@ body {
   width: 70%;
   height: 50%;
 }
+
+/* ====================== Admin ========================== */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 280px;
+
+}
+
+.candado-container {
+  width: 95%;
+  height: 100%;
+  background-image: url('../imgs/candado.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.white-container {
+  font-size: 18px;
+  color: #1B242A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 95%; /* O el ancho que prefieras */
+  background-color: var(--gray);
+  border-radius: 1px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la transición del zoom y la sombra */
+  /* Añade una sombra inicial ligera si deseas, por ejemplo: */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Navigation Styles */
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 45px;
+  text-align: center;
+}
+
+.grid-item {
+  background-color: #fff; /* Example button background color */
+  color: #1B242A; /* Example button text color */
+  padding: 40px;
+  border: 1.5px solid #000000; /* Example button border style */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.grid-item:hover {
+  background-color: #1B242A; /* Example button hover color */
+  color: #F3F2F2;
+}
+
+/* Statistics Grid 2x1 Styles */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-bottom: 40px;
+  margin: 45px;
+}
+
+.stats-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.number {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.circular-progress {
+  position: relative;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  font-size: 0.25em;
+}
+
+.trend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-upward {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+/* Customize the stroke color to match your design */
+.circle {
+  stroke: #000;
+}
