@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-sompatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego</title>
+    <title>NEORIS</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- =============== Navigation ================ -->
     <div class="container">
@@ -86,7 +88,7 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <h2 class="profile-title">Juego</h2>
+                <h2 class="profile-title">Admin</h2>
 
                 <div class="search">
                     <label>
@@ -102,15 +104,86 @@
                 </div> 
             </div>
 
-        <div class="game-container">
-            <img src="assets/imgs/unity-fondo.png" alt="UNITY" class="unity-container">
+            <div class="main-content">
+                <div class="candado-container"></div>
+            </div>
+            <div class="white-container">
+                <h1>Bienvenido Admin!</h1>
+            </div>
 
+            <div class="grid-nav">
+                <a href="#" class="grid-item">Gestionar usuarios</a>
+                <a href="#" class="grid-item">Gestionar cursos</a>
+                <a href="#" class="grid-item">Estadísticas de juego</a>
+                <a href="#" class="grid-item">Estadísticas de cursos</a>
+  
+            </div>
+
+            <!-- Statistics Grid 2x1 -->
+            <div class="stats-grid">
+                <!-- Daily Traffic Card -->
+                <div class="stats-card">
+                <h3>Daily traffic</h3>
+                <div class="number">200</div>
+                <div class="circular-progress" data-percentage="70">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle"
+                        stroke-dasharray="70, 100"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    </svg>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="trend">
+                    <span class="icon-upward">
+                    <ion-icon name="caret-up-outline"></ion-icon>
+                    </span>
+                    +0,5%
+                </div>
+                </div>
+            
+                <!-- Active Users Card -->
+                <div class="stats-card">
+                <h3>ACTIVE USERS</h3>
+                <div class="number">50</div>
+                <div class="circular-progress" data-percentage="50">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle"
+                        stroke-dasharray="50, 100"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    </svg>
+                    <div class="percentage">50%</div>
+                </div>
+                <div class="trend">
+                    <span class="icon-upward">
+                    <ion-icon name="caret-up-outline"></ion-icon>
+                    </span>
+                    +0,10%
+                </div>
+            </div>
         </div>
-    <!-- =========== Scripts =========  -->
+  
+
+        <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-</html>
+</html> 
