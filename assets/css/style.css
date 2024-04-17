@@ -573,3 +573,6 @@ body {
   height: 50%;
 }
 
+.highlighted {
+  background-color: #ffdd4b;
+}
