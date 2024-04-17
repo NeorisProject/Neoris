@@ -150,28 +150,7 @@ body {
   position: relative;
 }
 
-/* Estilos específicos para el título "Perfil" */
-.profile-title {
-  position: absolute;
-  left: 10%;
-  transform: translateX(-50%);
-  /* Asegúrate de que el título tiene suficiente contraste y visibilidad */
-  color: #000000; /* o cualquier color que combine con tu barra de navegación */
-  font-size: 1.5rem; /* o el tamaño que se ajuste a tu diseño */
-}
-
-
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
+/* ===================== Search Bar ===================== */
 .search {
   position: relative;
   width: 500px;
@@ -199,6 +178,28 @@ body {
   top: 0;
   left: 10px;
   font-size: 1.2rem;
+}
+
+/* Estilos específicos para el título "Perfil" */
+.profile-title {
+  position: absolute;
+  left: 10%;
+  transform: translateX(-50%);
+  /* Asegúrate de que el título tiene suficiente contraste y visibilidad */
+  color: #000000; /* o cualquier color que combine con tu barra de navegación */
+  font-size: 1.5rem; /* o el tamaño que se ajuste a tu diseño */
+}
+
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .user {
@@ -491,6 +492,8 @@ body {
   }
 }
 
+/* ====================== Mi Cuenta ========================== */
+
 .profile-picture {
   /* Estilos para la imagen de perfil */
   display: block; /* o flex, grid, etc. */
@@ -551,6 +554,85 @@ body {
   text-align: center;
 }
 
+/* ====================== Cursos ========================== */
+.cursos-container {
+  width: 95%;
+  height: 100%;
+  background-image: url('../imgs/cursos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-header {
+  margin-left: 2.5%;
+  font-size: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  min-width: calc(100% / 3);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  background: #fff;
+  text-decoration: none;
+  color: #444;
+  flex-shrink: 0;
+}
+
+.carousel-item img {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-description {
+  padding: 8px 16px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#prevBtn2 {
+  left: 10px;
+}
+
+#nextBtn2 {
+  right: 10px;
+}
+
 /* ====================== Juego ========================== */
 
 .game-container {
@@ -565,6 +647,146 @@ body {
   height: 50%;
 }
 
-.highlighted {
-  background-color: #ffdd4b;
+/* ====================== Admin ========================== */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 280px;
+
+}
+
+.candado-container {
+  width: 95%;
+  height: 100%;
+  background-image: url('../imgs/candado.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.white-container {
+  font-size: 18px;
+  color: #1B242A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 95%; /* O el ancho que prefieras */
+  background-color: var(--gray);
+  border-radius: 1px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la transición del zoom y la sombra */
+  /* Añade una sombra inicial ligera si deseas, por ejemplo: */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Navigation Styles */
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 45px;
+  text-align: center;
+}
+
+.grid-item {
+  background-color: #fff; /* Example button background color */
+  color: #1B242A; /* Example button text color */
+  padding: 40px;
+  border: 1.5px solid #000000; /* Example button border style */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.grid-item:hover {
+  background-color: #1B242A; /* Example button hover color */
+  color: #F3F2F2;
+}
+
+/* Statistics Grid 2x1 Styles */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-bottom: 40px;
+  margin: 45px;
+}
+
+.stats-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.number {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.circular-progress {
+  position: relative;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  font-size: 0.25em;
+}
+
+.trend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-upward {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+/* Customize the stroke color to match your design */
+.circle {
+  stroke: #000;
 }

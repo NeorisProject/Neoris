@@ -54,4 +54,3 @@ function setupCarousel(carouselSlideId, prevBtnId, nextBtnId) {
   setupCarousel('carouselSlide2', 'prevBtn2', 'nextBtn2');
   // Setup the third carousel
   setupCarousel('carouselSlide3', 'prevBtn3', 'nextBtn3');
-  
