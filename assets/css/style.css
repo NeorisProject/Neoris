@@ -150,28 +150,7 @@ body {
   position: relative;
 }
 
-/* Estilos específicos para el título "Perfil" */
-.profile-title {
-  position: absolute;
-  left: 10%;
-  transform: translateX(-50%);
-  /* Asegúrate de que el título tiene suficiente contraste y visibilidad */
-  color: #000000; /* o cualquier color que combine con tu barra de navegación */
-  font-size: 1.5rem; /* o el tamaño que se ajuste a tu diseño */
-}
-
-
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
+/* ===================== Search Bar ===================== */
 .search {
   position: relative;
   width: 500px;
@@ -199,6 +178,28 @@ body {
   top: 0;
   left: 10px;
   font-size: 1.2rem;
+}
+
+/* Estilos específicos para el título "Perfil" */
+.profile-title {
+  position: absolute;
+  left: 10%;
+  transform: translateX(-50%);
+  /* Asegúrate de que el título tiene suficiente contraste y visibilidad */
+  color: #000000; /* o cualquier color que combine con tu barra de navegación */
+  font-size: 1.5rem; /* o el tamaño que se ajuste a tu diseño */
+}
+
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .user {
