@@ -4,7 +4,7 @@
   "description": "A dashboard for NEORIS to handle profile and other user data interactions.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon assets/js/app.js"
   },
   "keywords": [
     "express",
