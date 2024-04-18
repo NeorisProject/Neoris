@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-sompatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Dashboard NEORIS</title>
+    <title>Admin</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- =============== Navigation ================ -->
     <div class="container">
         <div class="navigation">
             <ul>
@@ -18,7 +18,6 @@
                         <span class="icon">
                             <img src="assets/imgs/Icon_light.png" alt="NEORIS" class="logo">
                         </span>
-                        <!-- <span class="title">NEORIS</span> -->
                         <img src="assets/imgs/NEORIS logo light.png" alt="NEORIS_LOGO" class="logo_secondary">
                     </a>
                 </li>
@@ -86,7 +85,7 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <h2 class="profile-title">Mi Cuenta</h2>
+                <h2 class="profile-title">Admin</h2>
 
                 <div class="search">
                     <label>
@@ -102,71 +101,15 @@
                 </div> 
             </div>
 
-            <!-- ======================= Profile Section ================== -->
-            <div class="profile-section">
-                <div class="profile-details">
-                    <!-- User Profile Picture and Change Form -->
-                    <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
-                        <div class="profile-picture">
-                            <img src="assets/imgs/customer01.jpg" alt="Profile Picture" id="profileImgPreview">
-                            <input type="file" name="profilePic" id="profilePic" accept="image/*" onchange="previewImage();">
-                        </div>
-                        <div class = "boton">
-                            <input type="submit" value="Actualizar Foto">
-                        </div>
-                        
-                    </form>
+            <!-- ========================= Gestion Cursos Section ==================== -->
+            
 
-                    <!-- User Information -->
-                    <div class="user-information">
-                        <div class="info">
-                            <label>Nombre:</label>
-                            <p>Ari Fianto</p>
-                        </div>
-                        <div class="info">
-                            <label>Correo:</label>
-                            <p>correo@usuario.com</p>
-                        </div>
-                        <div class="info">
-                            <label>Contraseña:</label>
-                            <p>************</p>
-                        </div>
-                        <div class="info">
-                            <label>LinkedIn:</label>
-                            <p><a href="https://www.linkedin.com/in/usuario">Perfil de LinkedIn</a></p>
-                        </div>
-                        <div class="info">
-                            <label>Ocupación:</label>
-                            <p>Estudiante</p>
-                        </div>
-                        <div class="info">
-                            <label>Empresa:</label>
-                            <p>Tecnológico de Monterrey</p>
-                          </div>                          
-                        <div class="info">
-                            <label>Fecha de nacimiento:</label>
-                            <p>02/07/1990</p>
-                        </div>
-                        <div class="info">
-                            <label>Coins:</label>
-                            <p>2040</p>
-                        </div>
-                        <div class="info">
-                            <label>Cursos finalizados:</label>
-                            <p>- Html</p>
-                            <p>- Css</p>
-                            <p>- Python</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/busqueda.js"></script>
+
+    <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>

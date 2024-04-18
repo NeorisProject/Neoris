@@ -92,7 +92,7 @@
 
                 <div class="search">
                     <label>
-                        <input type="text" placeholder="Search">
+                        <input type="text" id="searchBar" placeholder="Buscar..." onkeyup="searchOnEnter(event)">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
                 </div>
@@ -112,8 +112,8 @@
             </div>
 
             <div class="grid-nav">
-                <a href="#" class="grid-item">Gestionar usuarios</a>
-                <a href="#" class="grid-item">Gestionar cursos</a>
+                <a href="gestion-usuarios.html" class="grid-item">Gestionar usuarios</a>
+                <a href="gestion-cursos.html" class="grid-item">Gestionar cursos</a>
                 <a href="#" class="grid-item">Estadísticas de juego</a>
                 <a href="#" class="grid-item">Estadísticas de cursos</a>
   
@@ -181,6 +181,7 @@
 
         <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/busqueda.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
